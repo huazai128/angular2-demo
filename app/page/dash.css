@@ -1,0 +1,4 @@
+h2{text-align: center;}
+.grid{overflow: hidden;}
+.detail{float: left;margin-right: 15px;padding: 5px 0;margin-bottom: 15px;width: 22%;height: 40px;line-height: 40px;background: #0b8883;}
+.detail a{display: block;text-decoration: none;text-align: center;color: #fff;}

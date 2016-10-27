@@ -1,0 +1,12 @@
+<h2>Top Heroes</h2>
+<div class="grid grid-pad">
+
+    <div *ngFor="let hero of heroes" (click)="getDetail(hero)" class="detail">
+        <div class="module hero">
+            <a>{{hero.name}}</a>
+        </div>
+    </div>
+</div>
+
+
+<search-hero></search-hero>

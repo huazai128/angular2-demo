@@ -1,0 +1,11 @@
+<!-- ngIf: 用于判断如果为空隐藏 -->
+<div class="hero-show" *ngIf="hero">
+    <h2>{{hero.name}} Detail!</h2>
+    <p><label>id:</label>{{hero.id}}</p>
+    <div class="form-in">
+        <label>name:</label>
+        <input [(ngModel)]="hero.name" placeholder="name">
+    </div>
+    <button (click)="saved()">Save</button>
+    <button (click)="goBack()">Back</button>
+</div>

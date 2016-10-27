@@ -1,0 +1,16 @@
+*{margin: 0;padding: 0;}
+ul,
+li{list-style: none;}
+.hero-list{margin-top:15px;margin-bottom: 15px;}
+.hero-list li{position: relative;height: 34px;line-height: 34px;margin-bottom: 8px;padding-left: 45px;cursor: pointer;border-radius: 4px;background: #eee;transition: 0.1s;}
+.hero-list li:hover{margin-left: 5px;color: #fff;background: #CFD8DC;}
+.hero-list li.selected{color: #fff;background: #CFD8DC;}
+.hero-list li span{position: absolute;top: 0;left: 0;width: 34px;height: 34px;line-height: 34px;text-align: center;border-radius: 4px 0 0 4px;color: #fff;background: #607D8B;}
+.hero-show h2{margin-bottom: 10px;}
+.hero-show p{color: #666;margin-bottom: 10px;}
+.hero-show label{display: inline-block;width: 100px;height: 30px;line-height: 30px;vertical-align: middle;}
+.hero-show input{width: 200px;height: 30px;padding: 0 5px;}
+.btn{width: 120px;height:34px;margin: 10px 0;}
+.btn-detail{width: 120px;height:34px;}
+.error{color: red;}
+.delete{position: relative;z-index: 1000;float: right;margin-right: 15px;width: 80px;height: 34px;background: #5d585e;}

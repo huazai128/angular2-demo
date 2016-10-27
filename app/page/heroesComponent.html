@@ -1,0 +1,22 @@
+<div class="hero-list">
+    <ul><!-- 使用for-of遍历 -->
+        <li *ngFor=" let hero of heroes" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">
+            <span>{{hero.id}}</span>{{hero.name}}
+            <button class="delete" (click)="deleteHero(hero,$event)">Delete</button>
+        </li>
+    </ul>
+</div>
+
+<div *ngIf="selectedHero">
+    <!-- uppercase:把名字过滤成大写 -->
+    <h2>{{selectedHero.name | uppercase}} is my hero</h2>
+    <button class="btn-detail" (click)="getDetail()">View Detail</button>
+</div>
+<div class="error" *ngIf="error">{{error}}</div>
+<button class="btn" (click)="addHero()">Add New Hero</button>
+<div *ngIf="addingHero">
+    <hero-detail (close)="close($event)"></hero-detail>
+</div>
+
+<!--&lt;!&ndash; [hero]="selectedHero":是把选中当前对象的值赋给[hero]属性；并使用@Input()是获取的值注入到HeroDetailComponent中；[hero]:在父组件HeroesComponent通过数据绑定把一个heroes对象设置为hero属性 &ndash;&gt;-->
+<!--<hero-detail [hero] ="selectedHero"></hero-detail>&lt;!&ndash; [hero]：从父组件的属性绑定中取得hero数据 &ndash;&gt;-->
